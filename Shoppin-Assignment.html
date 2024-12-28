@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Apple Watch Studio Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .option {
+            display: inLine-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .ooption.selected {
+            background-color: #007aff;
+            color: #fff;
+        }
+
+        #watch-preview {
+            margin: 20px 0;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #save-button {
+            background-color: #007aff;
+            color: #fff;
+        }
+
+        #download-button {
+            background-color: #6c757d;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Apple Watch Studio</h1>
+        <div>
+            <label for="collection-dropdown">Select Collection:</label>
+            <select id="collection-dropdown">
+                <option value="Series 10">Series 10</option>
+                <option value="Hermes">Hermes</option>
+                <option value="SE">SE</option>
+            </select>
+        </div>
+        <h3>Case Options</h3>
+        <div id="case-options">
+            <div class="option" data-case="Aluminum"><img src="https://via.placeholder.com/120?text=Aluminum" alt="Aluminum case">
+                <p>Aluminum</p>
+            </div>
+            <div class="option" data-case="Stainless Steel"><img src="http://via.placeholder.com/120?text=Stainless+Steel" alt="Stainless Steel case">
+                <p>Stainless Steel</p>
+            </div>
+            <div class="option" data-case="Titanium"><img src="https://via.placeholder.com/120?text=Titanium" alt="Titanium Case">
+                <p>Titanium</p>
+            </div>
+        </div>
+        <h3>Size Options</h3>
+        <div id="size-options">
+            <div class="option" data-size="40mm"><img src="https://via.placeholder.com/120?text=40mm" alt="40mm Size">
+                <p>40mm</p>
+            </div>
+            <div class="option" data-size="44mm"><img src="https://via.placeholder.com/120?text=44mm" alt="44mm Size">
+                <p>44mm</p>
+            </div>
+            <div class="option" data-size="49mm"><img src="https://via.placeholder.com/120?text=49mm" alt="49mm Size">
+                <p>49mm</p>
+            </div>
+        </div>
+        <div id="watch-preview">Please select a case and size.</div>
+        <div id="price-display">Total Price: $0</div>
+
+        <button id="save-button">Save Configuration</button>
+        <button id="share-button">Share on Social Media</button>
+        <button id="download-button">Download as Image</button>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
